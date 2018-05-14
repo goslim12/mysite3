@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="boarddto">
+	<select id="getList" parameterType="map" resultType="boardusersjoinvo">
+ 	 <![CDATA[
+		SELECT b.no as no,
+		title,
+		group_no as groupNO,
+		order_no as orderNo,
+		depth,
+		write_date as writeDate,
+		hit,
+		user_no as userNo,
+		name as userName
+		FROM board as b, users as u 
+		where b.user_no=u.no  and title like #{kwd}
+		order by group_no desc, order_no,write_date desc
+		limit #{start},#{numberPerPage}
+ 	   ]]>
+	</select>
+
+</mapper>

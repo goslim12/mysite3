@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+@import "mysite.css";
+
+#guestbook {
+	margin: 20px auto;
+	width: 540px;
+}
+
+#guestbook form, #guestbook table {
+	width: 100%
+}
+
+#guestbook table, #guestbook table td {
+	border: 1px solid #333
+}
+
+#guestbook table td {
+	padding: 5px
+}
+
+#guestbook ul {
+	width: 100%;
+	margin-top: 20px
+}
+
+#guestbook ul li {
+	width: 100%;
+	margin-top: 10px
+}
+
+h1.guestbook-main {
+	width: 100px;
+	height: 50px;
+	margin-bottom: -20px;
+	padding-left: 40px;
+	background: url("/mysite/assets/images/guestbook.png") no-repeat 0 0;
+	background-size: 25%;
+}
+
+#input-name, #input-password, #tx-content, #btn-send {
+	padding: 10px;
+	margin: 12px 0 0 0;
+	width: 100%;
+	height: 1.5em;
+}
+
+#tx-content {
+	height: 10em;
+}
+
+#btn-send {
+	padding: 0px;
+	margin: 8px 0 0 0;
+	width: 104%;
+	height: 3em;
+	background-color: #FFFFFF;
+}
+
+li.li-comment strong {
+	margin: 5em;
+	color: #ADAEB4;
+}
+
+li.li-comment p {
+	margin: 0 0 0 5em;
+	padding: 0.75em;
+	border: 1px solid #DBDBDB;
+	background-color: #FAFAFA;
+	color: #ADAEB4;
+}
+
+li.li-comment strong.image {
+	margin: -4.4em 0 0 0;
+	height: 4em;
+	float: left;
+	width: 4.5em;
+	background: url(../images/user.png) 0.25em 0 no-repeat;
+	background-size: 90%;
+}
+ #guestbook ul li	{
+  position:relative;
+ }
+
+
+#guestbook ul li a.delete-image {
+	position: absolute;
+	border!:1px solid #f00;
+	left:25px;
+	right:20px;
+	top:40px;
+	width:20px;
+	height:20px;
+	background: url(../images/delete.png)  no-repeat 0.25em 0;
+	font-size:0;
+}
+#guestbook.delete-form {
+	height: 200px
+}
+
+#guestbook.delete-form form {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #666;
+	border-radius: 10px;
+	margin: 50px auto;
+}
+
+#guestbook.delete-form a {
+	display: block;
+	margin: 20px auto;
+	width: 110px
+}
+
+#guestbook.delete-message p {
+	padding: 100px;
+	height: 50px;
+	text-align: center
+}
+
+#guestbook textarea#content {
+	width: 100%;
+	border: none;
+	height: 100px;
+	resize: none;
+	outline: none;
+}
